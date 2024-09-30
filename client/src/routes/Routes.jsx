@@ -1,9 +1,15 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Wallets } from '../pages/Wallets'
+import Wallet  from '../pages/Wallet'
+import Home from '../pages/Home'
 
-export const router = createBrowserRouter([
+export const routes = createBrowserRouter([
     {
-        path: '/',
-        element: <Wallets />,
+        path: '/wallet',
+        element: <Wallet />,
     },
+    {
+        path: '/home',
+        element: <Home />,
+    },
+
 ])
